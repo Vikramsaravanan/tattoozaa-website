@@ -1,0 +1,103 @@
+<html>
+<head>
+    <title>Tattoozaa</title>
+    <link rel="stylesheet" href="p1_css.css">
+    <script src="p1_js.js" defer></script>
+</head>
+<body>
+    <header background >
+
+        <div class="logo"><img src="p1_logo.jpg"></div>
+        <h1 id="logotext">For Your Longlasting Memories...</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#artists">Artists</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#booking">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Hello human , let's blend with Art.</h1>
+        <a href="#booking" class="cta-button">Book a Session</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Tattoozaa, we bring your stories to life through incredible tattoo artistry. Our team of professional tattoo artists ensures a safe and creative experience for everyone.</p>
+    </section>
+
+    <section id="artists">
+        <h2>Meet Our Artists</h2>
+        <div class="artist-container">
+            <div class="artist">
+                <img src="p1_male.jpg" alt="Artist 1" >
+                <h3>Manbo Key</h3>
+                <p>Specializes in black and gray realism.</p>
+            </div>
+            <div class="artist">
+                <img src="p1_female.jpg" alt="Artist 2">
+                <h3>Sara Pellegrino</h3>
+                <p>Known for vibrant color tattoos and anime art.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Our Work</h2>
+        <div class="gallery-container">
+            <img src="p1_tatoo1.jpg" alt="Tattoo 1">
+            <img src="p1_tatoo2.jpg" alt="Tattoo 2">
+            <img src="p1_tatoo3.jpg" alt="Tattoo 3">
+            <img src="p1_tatoo4.jpg" alt="Tattoo 4">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="p1_php1.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="booking">
+        <h2><center>Book Your Session</center></h2>
+        <form action="p1_php.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="artist">Choose Artist:</label>
+            <select id="artist" name="artist">
+                <option value="Manbo">Manbo Key</option>
+                <option value="Sara">Sara Pellegrino</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tattoozaa. All Rights Reserved.</p>
+    </footer>
+
+    CODE BY MARK IV
+</body>
+</html>
